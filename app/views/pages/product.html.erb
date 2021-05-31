@@ -1,0 +1,79 @@
+<div id="page-content">
+
+  <div class="tab">
+    <button class="tablinks" onclick="openProduct(event, 'Fruits')" id="defaultOpen">Fruits</button>
+    <button class="tablinks" onclick="openProduct(event, 'Cart')">Cart</button>
+    <button class="tablinks" onclick="openProduct(event, 'Checkout')">Checkout</button>
+  </div>
+
+  <div id="Fruits" class="tabcontent">
+    <div class="columns">
+      <ul class="price">
+        <li class="header" ><img src="assets/apple.jpeg" alt="Apple" style="width:100%">Apple</li>
+        <li class="grey">$ 10 </li>
+        <li class="grey"><a href="#" class="button">Add to Cart</a></li>
+      </ul>
+    </div>
+
+    <div class="columns">
+      <ul class="price">
+        <li class="header" ><img src="assets/melon.jpeg" alt="melon" style="width:100%">Water Melon</li>
+        <li class="grey">$ 25 </li>
+        <li class="grey"><a href="#" class="button">Add to Cart</a></li>
+      </ul>
+    </div>
+
+    <div class="columns">
+      <ul class="price">
+        <li class="header" ><img src="assets/mango.jpeg" alt="mango" style="width:100%">Mango</li>
+        <li class="grey">$ 60 </li>
+        <li class="grey"><a href="#" class="button">Add to Cart</a></li>
+      </ul>
+    </div>
+
+    <div class="columns">
+      <ul class="price">
+        <li class="header" ><img src="assets/banana.jpeg" alt="banana" style="width:100%">Banana</li>
+        <li class="grey">$ 30 </li>
+        <li class="grey"><a href="#" class="button">Add to Cart</a></li>
+      </ul>
+    </div>
+
+    <div class="columns">
+      <ul class="price">
+        <li class="header"><img src="assets/orange.jpeg" alt="orange" style="width:100%">Orange</li>
+        <li class="grey">$ 50</li>
+        <li class="grey"><a href="#" class="button">Add to Cart</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="Cart" class="tabcontent">
+  </div>
+
+  <div id="Checkout" class="tabcontent">
+  </div>
+  <script>
+    function openProduct(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+  </script>
+
+  </div>
+
+
+
+<%= render 'footer' %>

@@ -4,4 +4,7 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
 
   get 'login', to: 'pages#login'
+
+  get 'product', to: 'pages#product'
+
 end
