@@ -38,16 +38,11 @@ body {
 
 #page-content {
   flex: 1 0 auto;
-  background-color: lightgrey;
+  background-color:lightgrey;
 }
 
 #sticky-footer {
   flex-shrink: none;
-}
-
-html,
-body {
-  height: 100%;
 }
 
 .form-signin {
@@ -80,7 +75,9 @@ body {
   border-top-right-radius: 0;
 }
 
-* {box-sizing: border-box}
+* {
+  box-sizing: border-box;
+}
 body {font-family: "Lato", sans-serif;}
 
 /* Style the tab */
@@ -88,8 +85,9 @@ body {font-family: "Lato", sans-serif;}
   float: left;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
-  width: 10%;
+  width: 20%;
   height: 530px;
+  overflow: auto;
 }
 
 /* Style the buttons inside the tab */
@@ -105,6 +103,7 @@ body {font-family: "Lato", sans-serif;}
   cursor: pointer;
   transition: 0.3s;
   font-size: 17px;
+
 }
 
 /* Change background color of buttons on hover */
@@ -122,9 +121,10 @@ body {font-family: "Lato", sans-serif;}
   float: left;
   padding: 0px 12px;
   border: 1px solid #ccc;
-  width: 70%;
+  width: 80%;
   border-left: none;
-  height: 500px;
+  height: 530px;
+  overflow: auto;
 }
 
 .card button:hover {
@@ -138,12 +138,16 @@ body {font-family: "Lato", sans-serif;}
 .columns {
   float: left;
   width: 20%;
-  padding: 8px;
+  padding: 5px;
+
 }
 
 .price {
   list-style-type: none;
-  border: 1px solid #eee;
+  border-top: 5px solid #eee;
+  border-left: 5px solid #eee;
+  border-right: 5px solid #eee;
+  border-bottom: 200px solid #eee;
   margin: 0;
   padding: 0;
   -webkit-transition: 0.3s;

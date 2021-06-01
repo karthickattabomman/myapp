@@ -1,9 +1,9 @@
 <div id="page-content">
 
   <div class="tab">
-    <button class="tablinks" onclick="openProduct(event, 'Fruits')" id="defaultOpen">Fruits</button>
-    <button class="tablinks" onclick="openProduct(event, 'Cart')">Cart</button>
-    <button class="tablinks" onclick="openProduct(event, 'Checkout')">Checkout</button>
+    <button class="tablinks" onclick="openAction(event, 'Fruits')" id="defaultOpen">Fruits</button>
+    <button class="tablinks" onclick="openAction(event, 'Cart')">Cart</button>
+    <button class="tablinks" onclick="openAction(event, 'Checkout')">Checkout</button>
   </div>
 
   <div id="Fruits" class="tabcontent">
@@ -54,7 +54,7 @@
   <div id="Checkout" class="tabcontent">
   </div>
   <script>
-    function openProduct(evt, cityName) {
+    function openAction(evt, actionName) {
       var i, tabcontent, tablinks;
       tabcontent = document.getElementsByClassName("tabcontent");
       for (i = 0; i < tabcontent.length; i++) {
@@ -64,16 +64,12 @@
       for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
       }
-      document.getElementById(cityName).style.display = "block";
-      evt.currentTarget.className += " active";
+      document.getElementById(actionName).style.display = "block";
+      evt.currentTarget.className += "active";
     }
 
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click();
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
   </script>
 
-  </div>
-
-
-
-<%= render 'footer' %>
+</div>
