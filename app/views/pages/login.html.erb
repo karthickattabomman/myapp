@@ -1,18 +1,57 @@
 <div id="page-content">
-  <form class="form-signin">
-    <h1 class="h3 mb-3 font-weight-normal text-center">Please sign in</h1>
-    <label for="inputEmail" class="sr-only">Email address</label>
-    <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-    <label for="inputPassword" class="sr-only">Password</label>
-    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-    <div class="checkbox mb-3">
-      <label>
-        <input type="checkbox" value="remember-me"> Remember me
-      </label>
-    </div>
-    <a href="product.html">
-      <button class="btn btn-lg btn-primary btn-block" type="submit" >Sign in</button>
-    </a>
-  </form>
+  <div class="form-signin">
+    <h1 class="label">Login</h1>
+    <form class="login_form" action="product.html" method="get" name="form" onsubmit="return validated()">
+      <div class="font">Email or Phone</div>
+			<input autocomplete="off" type="text" name="email">
+			<div id="email_error">Please fill up your Email or Phone</div>
+			<div class="font font2">Password</div>
+			<input type="password" name="password">
+			<div id="pass_error">Please fill up your Password</div>
+			<button type="submit">Login</button>
+    </form>
+  </div>
+  <script>
+        //Validtion Code For Inputs
 
+    var email = document.forms['form']['email'];
+    var password = document.forms['form']['password'];
+
+    var email_error = document.getElementById('email_error');
+    var pass_error = document.getElementById('pass_error');
+
+    email.addEventListener('textInput', email_Verify);
+    password.addEventListener('textInput', pass_Verify);
+
+    function validated(){
+    if (email.value.length < 9) {
+      email.style.border = "1px solid red";
+      email_error.style.display = "block";
+      email.focus();
+      return false;
+    }
+    if (password.value.length < 6) {
+      password.style.border = "1px solid red";
+      pass_error.style.display = "block";
+      password.focus();
+      return false;
+    }
+
+    }
+    function email_Verify(){
+    if (email.value.length >= 8) {
+      email.style.border = "1px solid silver";
+      email_error.style.display = "none";
+      return true;
+    }
+    }
+    function pass_Verify(){
+    if (password.value.length >= 5) {
+      password.style.border = "1px solid silver";
+      pass_error.style.display = "none";
+      return true;
+    }
+    }
+
+  </script>
 </div>

@@ -7,6 +7,4 @@ Rails.application.routes.draw do
 
   get 'product', to: 'pages#product'
 
-  
-
 end
