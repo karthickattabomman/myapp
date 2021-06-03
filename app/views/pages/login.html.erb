@@ -1,63 +1,64 @@
-<div id="page-content">
-  <div class="container" id="home-container">
-    <div class="form-signin">
-      <h1 class="label">Login</h1>
-      <form class="login_form" action="product.html" method="get" name="form" onsubmit="return validated()">
-        <div class="font">Email</div>
-  			<input autocomplete="off" type="text" name="email">
-  			<div id="email_error">Please fill up your Email</div>
-  			<div class="font font2">Password</div>
-  			<input type="password" name="password">
-  			<div id="pass_error">Please fill up your Password</div>
-  			<button type="submit">Login</button>
-      </form>
+<section id="login">
+  <div class="container box">
+    <div class="row">
+      <div class="class="col-lg-4 col-md-4 col-12">
+        <h1 class="label">Log In</h1>
+        <form class="login_form" action="product.html" method="get" name="form" onsubmit="return validated()">
+          <div class="email">Email</div>
+          <input autocomplete="off" type="text" name="email">
+          <div id="email_error">Please fill up your Email</div>
+          <div class="password">Password</div>
+          <input type="password" name="password">
+          <div id="pass_error">Please fill up your Password</div>
+          <button class="btn signin">Login</button>
+        </form>
+      </div>
     </div>
   </div>
-  <script>
-    //Validtion Code For Inputs
+</section>
+<script>
+  //Validtion Code For Inputs
 
-    var email = document.forms['form']['email'];
-    var password = document.forms['form']['password'];
+  var email = document.forms['form']['email'];
+  var password = document.forms['form']['password'];
 
-    var email_error = document.getElementById('email_error');
-    var pass_error = document.getElementById('pass_error');
+  var email_error = document.getElementById('email_error');
+  var pass_error = document.getElementById('pass_error');
 
-    email.addEventListener('textInput', email_Verify);
-    password.addEventListener('textInput', pass_Verify);
+  email.addEventListener('textInput', email_Verify);
+  password.addEventListener('textInput', pass_Verify);
 
-    function validated(){
-
-
-    if (email.value.length < 9) {
-    email.style.border = "1px solid red";
-    email_error.style.display = "block";
-    email.focus();
-    return false;
-    }
-    if (password.value.length < 6) {
-    password.style.border = "1px solid red";
-    pass_error.style.display = "block";
-    password.focus();
-    return false;
-    }
-
-    }
-    function email_Verify(){
-    if (email.value.length >= 8) {
-    email.style.border = "1px solid silver";
-    email_error.style.display = "none";
-    return true;
-    }
-    }
-    function pass_Verify(){
-    if (password.value.length >= 5) {
-    password.style.border = "1px solid silver";
-    pass_error.style.display = "none";
-    return true;
-    }
-    }
+  function validated(){
 
 
-  </script>
+  if (email.value.length < 9) {
+  email.style.border = "1px solid red";
+  email_error.style.display = "block";
+  email.focus();
+  return false;
+  }
+  if (password.value.length < 6) {
+  password.style.border = "1px solid red";
+  pass_error.style.display = "block";
+  password.focus();
+  return false;
+  }
 
-</div>
+  }
+  function email_Verify(){
+  if (email.value.length >= 8) {
+  email.style.border = "1px solid silver";
+  email_error.style.display = "none";
+  return true;
+  }
+  }
+  function pass_Verify(){
+  if (password.value.length >= 5) {
+  password.style.border = "1px solid silver";
+  pass_error.style.display = "none";
+  return true;
+  }
+  }
+
+
+</script>

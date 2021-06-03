@@ -1,5 +1,4 @@
-<div id="page-content">
-
+<section id="product">
   <div class="tab">
     <button class="tablinks" onclick="openAction(event, 'Fruits')" id="defaultOpen">Fruits</button>
     <button class="tablinks" onclick="openAction(event, 'Cart')">Cart</button>
@@ -7,44 +6,95 @@
   </div>
 
   <div id="Fruits" class="tabcontent">
-    <div class="columns">
-      <ul class="price">
-        <li class="header" ><img src="assets/apple.jpeg" alt="Apple" style="width:100%">Apple</li>
-        <li class="grey">$ 10 </li>
-        <li class="grey"><a href="#" class="button">Add to Cart</a></li>
-      </ul>
-    </div>
-
-    <div class="columns">
-      <ul class="price">
-        <li class="header" ><img src="assets/melon.jpeg" alt="melon" style="width:100%">Water Melon</li>
-        <li class="grey">$ 25 </li>
-        <li class="grey"><a href="#" class="button">Add to Cart</a></li>
-      </ul>
-    </div>
-
-    <div class="columns">
-      <ul class="price">
-        <li class="header" ><img src="assets/mango.jpeg" alt="mango" style="width:100%">Mango</li>
-        <li class="grey">$ 60 </li>
-        <li class="grey"><a href="#" class="button">Add to Cart</a></li>
-      </ul>
-    </div>
-
-    <div class="columns">
-      <ul class="price">
-        <li class="header" ><img src="assets/banana.jpeg" alt="banana" style="width:100%">Banana</li>
-        <li class="grey">$ 30 </li>
-        <li class="grey"><a href="#" class="button">Add to Cart</a></li>
-      </ul>
-    </div>
-
-    <div class="columns">
-      <ul class="price">
-        <li class="header"><img src="assets/orange.jpeg" alt="orange" style="width:100%">Orange</li>
-        <li class="grey">$ 50</li>
-        <li class="grey"><a href="#" class="button">Add to Cart</a></li>
-      </ul>
+    <div class="container m-5">
+      <h1 class="text-center my-5">OUR PRODUCTS</h1>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="card">
+            <img src="assets/apple.jpeg" class="card-img-top" alt="Apple">
+            <div class="card-body text-center">
+              <h5 class="card-title">Apple</h5>
+              <a href="#" class="btn signin">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="card">
+            <img src="assets/banana.jpeg" class="card-img-top" alt="Banana">
+            <div class="card-body text-center">
+              <h5 class="card-title">Banana</h5>
+              <a href="#" class="btn signin">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="card">
+            <img src="assets/mango.jpeg" class="card-img-top" alt="Mango">
+            <div class="card-body text-center">
+              <h5 class="card-title">Mango</h5>
+              <a href="#" class="btn signin">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="card">
+            <img src="assets/melon.jpeg" class="card-img-top" alt="Water Melon">
+            <div class="card-body text-center">
+              <h5 class="card-title">Water Melon</h5>
+              <a href="#" class="btn signin">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="card">
+            <img src="assets/orange.jpeg" class="card-img-top" alt="Orange">
+            <div class="card-body text-center">
+              <h5 class="card-title">Orange</h5>
+              <a href="#" class="btn signin">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="card">
+            <img src="assets/papaya.jpeg" class="card-img-top" alt="Papaya">
+            <div class="card-body text-center">
+              <h5 class="card-title">Papaya</h5>
+              <a href="#" class="btn signin">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="card">
+            <img src="assets/kiwi.jpeg" class="card-img-top" alt="Kiwi">
+            <div class="card-body text-center">
+              <h5 class="card-title">Kiwi</h5>
+              <a href="#" class="btn signin">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="card">
+            <img src="assets/pine.jpeg" class="card-img-top" alt="Pine Apple">
+            <div class="card-body text-center">
+              <h5 class="card-title">Pine Apple</h5>
+              <a href="#" class="btn signin">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+          <div class="card">
+            <img src="assets/strawberry.jpeg" class="card-img-top" alt="Strawberry">
+            <div class="card-body text-center">
+              <h5 class="card-title">Strawberry</h5>
+              <a href="#" class="btn signin">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -52,7 +102,9 @@
   </div>
 
   <div id="Checkout" class="tabcontent">
+    
   </div>
+
   <script>
     function openAction(evt, actionName) {
       var i, tabcontent, tablinks;
@@ -71,5 +123,4 @@
       // Get the element with id="defaultOpen" and click on it
       document.getElementById("defaultOpen").click();
   </script>
-
-</div>
+</section>
