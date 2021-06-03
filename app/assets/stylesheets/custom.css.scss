@@ -31,11 +31,10 @@ background-color: green !important;
 
 /* login starts*/
 .form-signin{
-  position: fixed;
-  center: 0;
+  position: relative;
 	margin: 50px;
 	width: 450px;
-	height: auto;
+	height: 400px;
 	background: #dedede;
 	border-radius: 5px;
 }
