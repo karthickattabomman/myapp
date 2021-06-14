@@ -20,22 +20,19 @@
 .navbar .navbar-brand{
   font-size: 25px;
   font-weight: 800;
-  color: #29f700 !important;
+  color: #3AACAC !important;
 }
 #navbarSupportedContent a{
   color: #fff;
   border-bottom: 2px solid transparent;
 }
 #navbarSupportedContent a:hover{
-  border-bottom: 2px solid #29f700;
+  border-bottom: 2px solid #3AACAC;
 }
-#navbarSupportedContent button{
-  background: #29f700;
-  width: 5rem;
-  border-radius: 20px;
-}
+
 .dropdown-menu {
-  background: green;
+  background: #3AACAC;
+   min-width: 150px;
 }
 
 /*--Home--*/
@@ -55,15 +52,9 @@ section {
 #home h1 {
   font-size: 100px;
   color: white;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   font-family: verdana, Geneva, Tahoma, sans-serif;
-  text-shadow: 0px 1px 0px #CCC,
-               0px 2px 0px #CCC,
-               0px 3px 0px #CCC,
-               0px 4px 0px #CCC,
-               0px 5px 0px #CCC,
-               0px 6px 0px #CCC,
-               0px 7px 0px #CCC;
+
 }
 #home p {
   font-size: 18px;
@@ -72,7 +63,7 @@ section {
 
 /*About*/
 #about {
-  background: linear-gradient(to right, pink, red 100%);
+  background: linear-gradient(to right, pink, #00bfff 100%);
 }
 #about h1 {
   font-weight: 800;
@@ -123,7 +114,7 @@ section {
 
 /*products*/
 #product {
-  background: #e5e5e5;
+  background: white;
 }
 #product h1 {
   font-size: 50px;
@@ -139,42 +130,31 @@ section {
   width: 250px;
   height: 350px;
   background: white !important;
-  border: none !important;
-  box-shadow: 15px 20px 20px rgba(0,0,0,.3),
-              inset 4px 4px 10px #e5e5e5;
-  border-radius: 20px !important;
+  border-box: 10px;
   overflow: hidden;
   justify-content: center;
   align-items: center;
-  margin: 20px 60px;
+  margin: 20px 20px;
   transition: .2s;
 }
-.card:hover {
-  box-shadow: inset 5px 5px 10px rgba(0,0,0,.3),
-              inset -4px -4px 10px #e5e5e5;
-  transition: .2s;
-}
+
 .signin{
-  background: green !important;
+  background: #3AACAC !important;
   color: white !important;
-  box-shadow: 2px 4px 5px rgba(0,0,0,.3);
+  justify-content: center;
 }
 
 /*newlogin*/
 .box {
   width: 350px;
   height: 400px;
-  background: aqua !important;
-  border: none !important;
-  box-shadow: 15px 20px 20px rgba(0,0,0,.3),
-              inset 4px 4px 10px #e5e5e5;
-  border-radius: 20px !important;
-  overflow: hidden;
-  justify-content: center;
-  align-items: center;
+  background: white !important;
+  border: 1px solid #3949AB;
+  border-radius: 20px;
   margin: 20px 60px;
   transition: .2s;
 }
+
 form {
   display: flex;
   flex-direction: column;
@@ -203,6 +183,7 @@ form {
 }
 .login_form{
 	padding: 20px 10px;
+  justify-content: center;
 }
 .login_form .font{
 	font-size: 18px;
@@ -229,9 +210,10 @@ form {
 	cursor: pointer;
 	font-weight: bold;
 	background: #1A237E;
-	border-radius: 15px;
+	border-radius: 10px;
 	border: 1px solid #3949AB;
 	transition: .5s;
+  justify-content: center;
 }
 .login_form button:hover{
 	background: #151c6a;
@@ -257,10 +239,7 @@ table {
   width: 600px;
   height: 400px;
   background: white !important;
-  border: none !important;
-  box-shadow: 15px 20px 20px rgba(0,0,0,.3),
-              inset 4px 4px 10px #e5e5e5;
-  border-radius: 10px !important;
+  border: 1px solid silver;
   overflow: hidden;
   justify-content: center;
   align-items: center;
